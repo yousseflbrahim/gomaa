@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;1,300;1,400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient( to right , #01022d,#000 120%) center center/ cover no-repeat;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(186, 184, 184);
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width:100% ; 
+    min-height: 100vh;
+    display: flex;
+    align-items:center ; 
+}
+
+.main h2{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    
+}
+
+.main h2 span{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: #3d40ea;
+}
+
+.main h3{
+    font-size: 20px; 
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top:10px ; 
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    color: #fff; 
+}
+
+.main .main-but{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    background: #3d40ea;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    color: #fff;
+    transition: 0.7s;
+}
+
+.main .main-but:hover{
+    transform: scale(1.1);
+    background-color: #0a49f6;
+}
+
+.img img {
+    width: 400px;
+    margin-left: 15rem;
+    border-radius: 15px;
+    height: 500px;
+    border: #0a49f6 solid 10px;
+    padding: 40px;
+}
+@media (max-width:950px){
+    header{
+        padding: 0 0 0 10px;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    .logo{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        padding-right: 25%;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .img img{
+       
+        border: none;
+        width: 200px;
+        height:270px;
+        margin-left:10px;
+    }
+
+}
